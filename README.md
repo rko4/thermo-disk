@@ -1,9 +1,9 @@
 # thermo-disk
 
-**A transient radial heat‑transfer simulator in MATLAB**  
+**A transient radial heat‑transfer simulation in MATLAB**  
 An explicit finite‑difference solver for temperature evolution in a thin copper disk under sudden internal heating, created as a 2013 interview home task.
 
----
+<img src="./heat_distribution_1_sec.png" alt="CarJam Banner" width="400"/>
 
 ## Overview
 
@@ -17,7 +17,6 @@ u(n+1,j) = A·u(n,j) + B·u(n,j+1) + C·u(n,j-1) + D·T_air
 
 Coefficients A, B, C, D derive from copper’s material properties and geometry.
 
----
 
 ## Features
 
@@ -26,7 +25,6 @@ Coefficients A, B, C, D derive from copper’s material properties and geometry.
 - 2D contour & 3D surface visualizations  
 - Easy tuning of Δr, Δt, disk dimensions, and material constants  
 
----
 
 ## Repository Structure
 
@@ -45,7 +43,6 @@ Coefficients A, B, C, D derive from copper’s material properties and geometry.
 - `Task_thermal_solution.pdf`  
   Derivation details and sample output snapshots.
 
----
 
 ## Usage
 
@@ -53,3 +50,7 @@ Coefficients A, B, C, D derive from copper’s material properties and geometry.
 2. Run the master script:
    ```matlab
    evalDistribution;
+
+
+## License
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
